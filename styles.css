@@ -79,20 +79,18 @@ nav {
 
 nav a {
     display: flex;
-    gap: 3px;
     justify-content: center;
     padding: 2rem;
     margin: 0 auto;
     font-size: 1.5em;
     text-decoration: none;
-    color: white;
-  
+    color: white; 
 }
 
 nav ul{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 0.5px;
+    justify-content: space-evenly;
 }
 
 h1 {
@@ -133,6 +131,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     padding: 5px;
+    max-width: 350px;
 }
 
 footer {
@@ -187,13 +186,20 @@ input, select, textarea {
 	font-size: 1.3rem;
 	font-weight: bold;
     color: white;
+    width: 13em;
+    height: 2.5em;
+    margin: 0 auto;
+}
+
+input:focus, select:focus, textarea:focus{
+	outline:3px solid #007d7b;
 }
 
 #my-submit:hover {
-    text-decoration: underline;
+    color: black;
 }
 
-
+/*media screen*/
 
 @media screen and (min-width: 420px) {
     body {
