@@ -81,10 +81,16 @@ nav a {
     display: flex;
     justify-content: center;
     padding: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin: 0 auto;
     font-size: 1.5em;
     text-decoration: none;
     color: white; 
+}
+
+nav a:hover {
+    background-color: #007d7b;
 }
 
 nav ul{
@@ -127,7 +133,6 @@ p {
 }
 
 img {
-    display: block;
     margin-left: auto;
     margin-right: auto;
     padding: 5px;
@@ -138,20 +143,32 @@ footer {
     text-align: center;
     text-transform: uppercase;
     color: white;
+    padding-top: 35px;
 }
 
 footer p {
     text-align: center;
 }
 
+figure {
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+}
+
 figcaption {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
+    
 }
 
 figcaption, label, input, small {
     font-size: 1em;
+}
+
+:focus {
+    border: 5px solid #007d7b;
 }
 
 /*form*/
@@ -175,6 +192,12 @@ input, select, textarea {
 	padding: 10px;
 	font-size: 1rem;
 	margin-bottom: 20px;
+}
+
+::placeholder {
+    color: #007d7b;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 #my-submit {
@@ -205,27 +228,28 @@ input:focus, select:focus, textarea:focus{
     body {
         max-width: 420px;
     }
-    nav ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-   .column {
-    columns: 550px 1;
-   }
-
 }
 
-/*@media screen and (min-width: 836px) {
+@media screen and (min-width: 836px) {
+    body {
+        max-width: 836px;
+    }
+  
+    .column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    } 
+}
+
+@media screen and (min-width: 1100px) {
 
     body {
-        max-width: 550px;
+        max-width: 1100px;
     }
 
     .column {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
 }
-*/
