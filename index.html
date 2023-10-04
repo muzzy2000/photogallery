@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photography</title>
+    <title>TK Photography</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -11,66 +12,91 @@
 
         <nav>
             <ul>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Gallery">Gallery</a></li>
-                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><a href="#top">top</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
+        <section id="about">
             <h2>About</h2>
                 <p>Hello!</p>
                 <p>I'm TK and I'm a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it's taken me all over the world.</p>
         </section>
-        
-        <section>
+
+        <section id="gallery">
             <h2>Gallery</h2>
                 <p>Here are some highlights of my work. The locations and year are in the caption.</p>
 
+        <div class="column">
+            <figure>  
                 <img src="images/Chile.png" alt="a sunset on the beach">
-                Chile, 2001
+                <figcaption>Chile, 2001</figcaption>
+            </figure>  
 
+            <figure>
                 <img src="images/Guatemala.png" alt="a valley of purple flowers with mountains in the background">
-                Guatemala, 1997
+                <figcaption>Guatemala, 1997</figcaption>
+            </figure>
 
+            <figure>
                 <img src="images/Hawaii.png" alt="the island of hawaii">
-                Hawaii, 2010
+                <figcaption>Hawaii, 2010</figcaption>
+            </figure>
 
+            <figure>
                 <img src="images/Iran.png" alt="a field of plants and mountains in the background with the sunrise">
-                Iran, 1999
+                <figcaption>Iran, 1999</figcaption>
+            </figure>
 
+            <figure>
                 <img src="images/Ireland.png" alt="a green forestry area  with green hills and trees">
-                Ireland, 2012
+                <figcaption>Ireland, 2012</figcaption>
+            </figure>
 
+            <figure>
                 <img src="images/Moab-Desert.png" alt="the view of a lake and mountains, a person is in a canoe on the lake">
-                Italy, 2015
+                <figcaption>Italy, 2015</figcaption>
+            </figure>
 
+            <figure>
                 <img src="images/Moab-Desert.png" alt="shows a canyon and the sun glinting in the sky">
-                Moab Desert, 2020
+                <figcaption>Moab Desert, 2020</figcaption>
+            </figure>
 
+            <figure>
                 <img src="images/Rocky-Mountains.png" alt="mountains of rocks with the ocean right behind it">
-                Rocky Mountains, 2009
+                <figcaption>Rocky Mountains, 2009</figcaption>
+            </figure>
 
+            <figure>
                 <img src="images/Switzerland.png" alt="a snowed cover mountain with pines and mountains in the background">
-                Switzerland, 2014
+                <figcaption>Switzerland, 2014</figcaption>
+            </figure>
 
+            <figure>
                 <img src="images/UK.png" alt="a yellowish/green valley with roll of hills">
-                UK, 2005
+                <figcaption>UK, 2005</figcaption>
+            </figure>
 
+            <figure>
                 <img src="images/USA.png" alt="a field of red and yellow tulips with hills in the background">
-                USA, 2021
+                <figcaption>USA, 2021</figcaption>
+            </figure>
 
+            <figure>
                 <img src="images/Wyoming.png" alt="a lake with pines behind, and mountains in the back of it">
-                Wyoming, 2021
-
+                <figcaption>Wyoming, 2021</figcaption>
+            </figure>
+        </div>
         </section>
 
-        <section>
+        <section id="contact">
             <h2>Contact</h2>
-                <p>Please fill out this form and I’ll connect with you soon.</p>
+                <p>Please fill out this form and I'll connect with you soon.</p>
             <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
 
                 <label for="my-name">Name</label>
